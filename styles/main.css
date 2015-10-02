@@ -7,7 +7,7 @@
 body {
     background: #b3dbe8;
     color: #000;
-    font-family: sans-serif; /*   add fonts here   */
+    font-family: Roboto, Arial, sans-serif; /*   add fonts here   */
     font-size: 100%; /* DO NOT change */
     margin: 0; /* DO NOT change */
 }
@@ -18,7 +18,7 @@ body {
     auto centers a block element regardless of width of device
     when using auto, combine it with max-width
     */
-#container {
+#container  {
     max-width: 1280px;
     margin: 2% auto;
 }
@@ -27,7 +27,7 @@ article {
     width: 55%;
     float: left;
     padding: 2em;
-    background: #eaeaea;
+    background: #eaeaea; 
 }
 
 aside {
@@ -48,7 +48,7 @@ aside {
 
 h1, h2 {
     margin: 0;
-    font-family: serif;  /*   add fonts here   */
+    font-family:'PT Serif Caption', Times, serif;  /*   add fonts here   */
 }
 
 article h1 {
@@ -108,6 +108,31 @@ aside a:focus, aside a:hover {
 
 .clearfix {
     clear: both;
+
+/* media queries */	
+
+@media (min-width: 375px) {
+
+#container article {
+    width: 100%;
+    margin: 0;
 }
 
-/* media queries */
+#container aside {
+    width: 100%;
+    margin: 0;
+}
+
+#container{
+	max-width: auto;
+}
+
+#sidebar2 {
+    width: 100%;
+    margin: 0;
+}
+
+#top-image-container{
+	display: none;
+}
+}
